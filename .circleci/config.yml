@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.7
+  cypress: cypress-io/cypress@1.29.0
 
 jobs:
   install:
@@ -99,11 +100,34 @@ workflows:
       - unit-test:
           requires:
             - install
+      - cypress/install:
+          resource_class: large
+          requires:
+            - build
+          post-checkout:
+            - restore_node_modules
+          cache-key: functional-test-{{ checksum "packages/integration-test/package-lock.json" }}
+          working_directory: packages/integration-test
+          pre-steps:
+            - run: npm run integ:setup
+      - cypress/run:
+          resource_class: large
+          requires:
+            - cypress/install
+          cache-key: functional-test-{{ checksum "packages/integration-test/package-lock.json" }}
+          working-directory: packages/integration-test
+          install: false
+          start: npm start
+          wait-on: 'http://localhost:3000'
+          wait-on-timeout: 210
+          parallel: true
+          parallelism: 3
       - publish:
           requires:
             - style
             - build
             - unit-test
+            - cypress/run
           filters:
             branches:
               only:
