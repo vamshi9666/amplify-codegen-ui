@@ -14,8 +14,8 @@ exports[`react-studio-template-renderer-helper transpile fails to transpile with
 
 exports[`react-studio-template-renderer-helper transpile successfully transpiles with ScriptTarget ES3 1`] = `
 "import React from \\"react\\";
-import { EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
-import { ViewTestProps } from \\"./ViewTest\\";
+import { type EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
+import { type ViewTestProps } from \\"./ViewTest\\";
 export declare type CustomParentAndChildrenProps = React.PropsWithChildren<Partial<ViewTestProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
@@ -25,8 +25,8 @@ export default function CustomParentAndChildren(props: CustomParentAndChildrenPr
 
 exports[`react-studio-template-renderer-helper transpile successfully transpiles with ScriptTarget ES5 1`] = `
 "import React from \\"react\\";
-import { EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
-import { ViewTestProps } from \\"./ViewTest\\";
+import { type EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
+import { type ViewTestProps } from \\"./ViewTest\\";
 export declare type CustomParentAndChildrenProps = React.PropsWithChildren<Partial<ViewTestProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
@@ -36,8 +36,8 @@ export default function CustomParentAndChildren(props: CustomParentAndChildrenPr
 
 exports[`react-studio-template-renderer-helper transpile successfully transpiles with ScriptTarget ES2015 1`] = `
 "import React from \\"react\\";
-import { EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
-import { ViewTestProps } from \\"./ViewTest\\";
+import { type EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
+import { type ViewTestProps } from \\"./ViewTest\\";
 export declare type CustomParentAndChildrenProps = React.PropsWithChildren<Partial<ViewTestProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
@@ -47,8 +47,8 @@ export default function CustomParentAndChildren(props: CustomParentAndChildrenPr
 
 exports[`react-studio-template-renderer-helper transpile successfully transpiles with ScriptTarget ES2016 1`] = `
 "import React from \\"react\\";
-import { EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
-import { ViewTestProps } from \\"./ViewTest\\";
+import { type EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
+import { type ViewTestProps } from \\"./ViewTest\\";
 export declare type CustomParentAndChildrenProps = React.PropsWithChildren<Partial<ViewTestProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
@@ -58,8 +58,8 @@ export default function CustomParentAndChildren(props: CustomParentAndChildrenPr
 
 exports[`react-studio-template-renderer-helper transpile successfully transpiles with ScriptTarget ES2017 1`] = `
 "import React from \\"react\\";
-import { EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
-import { ViewTestProps } from \\"./ViewTest\\";
+import { type EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
+import { type ViewTestProps } from \\"./ViewTest\\";
 export declare type CustomParentAndChildrenProps = React.PropsWithChildren<Partial<ViewTestProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
@@ -69,8 +69,8 @@ export default function CustomParentAndChildren(props: CustomParentAndChildrenPr
 
 exports[`react-studio-template-renderer-helper transpile successfully transpiles with ScriptTarget ES2018 1`] = `
 "import React from \\"react\\";
-import { EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
-import { ViewTestProps } from \\"./ViewTest\\";
+import { type EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
+import { type ViewTestProps } from \\"./ViewTest\\";
 export declare type CustomParentAndChildrenProps = React.PropsWithChildren<Partial<ViewTestProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
@@ -80,8 +80,8 @@ export default function CustomParentAndChildren(props: CustomParentAndChildrenPr
 
 exports[`react-studio-template-renderer-helper transpile successfully transpiles with ScriptTarget ES2019 1`] = `
 "import React from \\"react\\";
-import { EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
-import { ViewTestProps } from \\"./ViewTest\\";
+import { type EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
+import { type ViewTestProps } from \\"./ViewTest\\";
 export declare type CustomParentAndChildrenProps = React.PropsWithChildren<Partial<ViewTestProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
@@ -91,8 +91,8 @@ export default function CustomParentAndChildren(props: CustomParentAndChildrenPr
 
 exports[`react-studio-template-renderer-helper transpile successfully transpiles with ScriptTarget ES2020 1`] = `
 "import React from \\"react\\";
-import { EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
-import { ViewTestProps } from \\"./ViewTest\\";
+import { type EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
+import { type ViewTestProps } from \\"./ViewTest\\";
 export declare type CustomParentAndChildrenProps = React.PropsWithChildren<Partial<ViewTestProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
@@ -102,8 +102,8 @@ export default function CustomParentAndChildren(props: CustomParentAndChildrenPr
 
 exports[`react-studio-template-renderer-helper transpile successfully transpiles with ScriptTarget ES2021 1`] = `
 "import React from \\"react\\";
-import { EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
-import { ViewTestProps } from \\"./ViewTest\\";
+import { type EscapeHatchProps } from \\"@aws-amplify/ui-react/internal\\";
+import { type ViewTestProps } from \\"./ViewTest\\";
 export declare type CustomParentAndChildrenProps = React.PropsWithChildren<Partial<ViewTestProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;

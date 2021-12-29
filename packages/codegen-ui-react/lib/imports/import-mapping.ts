@@ -22,7 +22,7 @@ export enum ImportSource {
 
 export enum ImportValue {
   GET_OVERRIDE_PROPS = 'getOverrideProps',
-  ESCAPE_HATCH_PROPS = 'EscapeHatchProps',
+  ESCAPE_HATCH_PROPS = 'type EscapeHatchProps',
   USE_AUTH = 'useAuth',
   GET_OVERRIDES_FROM_VARIANTS = 'getOverridesFromVariants',
   VARIANT = 'Variant',

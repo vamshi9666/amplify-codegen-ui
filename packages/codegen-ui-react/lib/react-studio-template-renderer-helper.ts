@@ -99,6 +99,13 @@ export function transpile(
 
       const fsMap = createDefaultMapFromNodeModules(compilerOptions, ts);
       fsMap.set('index.tsx', code);
+      // workaround for TypeScript bug. See https://github.com/microsoft/TypeScript/issues/47273
+      if (target === ScriptTarget.ES2021) {
+        // eslint-disable-next-line global-require, @typescript-eslint/no-var-requires, import/no-dynamic-require
+        const fs = require(String.fromCharCode(102, 115)) as typeof import('fs');
+        const lib = '/lib.es2021.intl.d.ts';
+        fsMap.set(lib, fs.readFileSync(path.join(path.dirname(require.resolve('typescript')), lib), 'utf8'));
+      }
 
       const host = createVirtualCompilerHost(createSystem(fsMap), compilerOptions, ts);
       createProgram({

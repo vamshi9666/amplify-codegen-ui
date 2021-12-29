@@ -87,7 +87,7 @@ export class ReactIndexStudioTemplateRenderer extends StudioTemplateRenderer<
           undefined,
           false,
           factory.createNamedExports([
-            factory.createExportSpecifier(factory.createIdentifier('default'), factory.createIdentifier(name)),
+            factory.createExportSpecifier(false, factory.createIdentifier('default'), factory.createIdentifier(name)),
           ]),
           factory.createStringLiteral(`./${name}`),
         );

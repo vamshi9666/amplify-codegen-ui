@@ -57,7 +57,7 @@ export class ImportCollection {
         factory.createImportClause(
           undefined,
           factory.createNamedImports([
-            factory.createImportSpecifier(undefined, factory.createIdentifier(topComponentName)),
+            factory.createImportSpecifier(false, undefined, factory.createIdentifier(topComponentName)),
           ]),
         ),
         factory.createStringLiteral('./ui-components'),
@@ -89,17 +89,28 @@ export class ImportCollection {
               // use module name as defualt import name
               [...imports].indexOf('default') >= 0 ? factory.createIdentifier(path.basename(moduleName)) : undefined,
               factory.createNamedImports(
-                namedImports.map((item) => {
-                  // import { foo as bar } from './module';
-                  const renamedImport = item.match(/^(.*) as (.*)$/);
-                  if (renamedImport) {
-                    return factory.createImportSpecifier(
-                      factory.createIdentifier(renamedImport[1]),
-                      factory.createIdentifier(renamedImport[2]),
-                    );
-                  }
-                  return factory.createImportSpecifier(undefined, factory.createIdentifier(item));
-                }),
+                namedImports
+                  .map((item): [boolean, string] => {
+                    // import { type bar } from './module';
+                    const typeOnlyImport = item.match(/^type (.*)$/);
+                    if (typeOnlyImport) {
+                      return [true, typeOnlyImport[1]];
+                    }
+
+                    return [false, item];
+                  })
+                  .map(([isTypeOnly, item]) => {
+                    // import { foo as bar } from './module';
+                    const renamedImport = item.match(/^(.*) as (.*)$/);
+                    if (renamedImport) {
+                      return factory.createImportSpecifier(
+                        isTypeOnly,
+                        factory.createIdentifier(renamedImport[1]),
+                        factory.createIdentifier(renamedImport[2]),
+                      );
+                    }
+                    return factory.createImportSpecifier(isTypeOnly, undefined, factory.createIdentifier(item));
+                  }),
               ),
             ),
             factory.createStringLiteral(moduleName),

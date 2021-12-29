@@ -57,6 +57,10 @@ export function getModelImportName(modelName: string): string {
   return `${modelName}Model`;
 }
 
+export function getTypeOnlyImport(importName: string): string {
+  return `type ${importName}`;
+}
+
 export type ComponentPropertyValueTypes =
   | ConcatenatedStudioComponentProperty
   | ConditionalStudioComponentProperty

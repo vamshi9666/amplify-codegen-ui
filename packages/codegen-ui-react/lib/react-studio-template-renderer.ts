@@ -62,7 +62,7 @@ import { ImportCollection, ImportSource, ImportValue } from './imports';
 import { ReactOutputManager } from './react-output-manager';
 import { ReactRenderConfig, ScriptKind, scriptKindToFileExtension } from './react-render-config';
 import SampleCodeRenderer from './amplify-ui-renderers/sampleCodeRenderer';
-import { getComponentPropName, getModelImportName } from './react-component-render-helper';
+import { getComponentPropName, getModelImportName, getTypeOnlyImport } from './react-component-render-helper';
 import {
   transpile,
   buildPrinter,
@@ -323,9 +323,12 @@ export abstract class ReactStudioTemplateRenderer extends StudioTemplateRenderer
 
     const componentIsPrimitive = isPrimitive(component.componentType);
     if (componentIsPrimitive || isBuiltInIcon(component.componentType)) {
-      this.importCollection.addImport(ImportSource.UI_REACT, propsType);
+      this.importCollection.addImport(ImportSource.UI_REACT, getTypeOnlyImport(propsType));
     } else {
-      this.importCollection.addImport(`./${component.componentType}`, `${component.componentType}Props`);
+      this.importCollection.addImport(
+        `./${component.componentType}`,
+        getTypeOnlyImport(`${component.componentType}Props`),
+      );
     }
 
     const propsTypeParameter = componentIsPrimitive
@@ -698,7 +701,7 @@ export abstract class ReactStudioTemplateRenderer extends StudioTemplateRenderer
           this.importCollection.addMappedImport(ImportValue.SORT_PREDICATE);
           statements.push(this.buildPaginationStatement(propName, model, sort));
         }
-        this.importCollection.addImport(ImportSource.LOCAL_MODELS, model, getModelImportName(model));
+        this.importCollection.addImport(ImportSource.LOCAL_MODELS, getTypeOnlyImport(model), getModelImportName(model));
         statements.push(
           this.buildPropPrecedentStatement(
             propName,
@@ -762,7 +765,11 @@ export abstract class ReactStudioTemplateRenderer extends StudioTemplateRenderer
             statements.push(this.buildPredicateDeclaration(propName, bindingProperties.predicate));
             statements.push(this.buildCreateDataStorePredicateCall(`${bindingProperties.model}Model`, propName));
             const { model } = bindingProperties;
-            this.importCollection.addImport(ImportSource.LOCAL_MODELS, model, getModelImportName(model));
+            this.importCollection.addImport(
+              ImportSource.LOCAL_MODELS,
+              getTypeOnlyImport(model),
+              getModelImportName(model),
+            );
 
             /* const buttonColorDataStore = useDataStoreBinding({
              *   type: "collection"
