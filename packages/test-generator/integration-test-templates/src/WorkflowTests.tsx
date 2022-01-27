@@ -13,10 +13,23 @@
   See the License for the specific language governing permissions and
   limitations under the License.
  */
-import { useState, SyntheticEvent } from 'react';
+import { useState, SyntheticEvent, useEffect } from 'react';
 import '@aws-amplify/ui-react/styles.css';
-import { AmplifyProvider, View, Heading, Divider } from '@aws-amplify/ui-react';
-import { Event } from './ui-components'; // eslint-disable-line import/extensions
+import { AmplifyProvider, View, Heading, Divider, Button } from '@aws-amplify/ui-react';
+import { DataStore } from '@aws-amplify/datastore';
+import { Hub } from 'aws-amplify';
+import {
+  AuthSignOutActions,
+  SimpleUserCollection,
+  Event,
+  NavigationActions,
+  DataStoreActions,
+  FormWithState,
+  InternalMutation,
+} from './ui-components'; // eslint-disable-line import/extensions
+import { User } from './models';
+
+type AuthState = 'LoggedIn' | 'LoggedOutLocally' | 'LoggedOutGlobally' | 'Error';
 
 export default function ComplexTests() {
   const [clicked, click] = useState('');
@@ -35,11 +48,59 @@ export default function ComplexTests() {
   const [keyeddown, keydown] = useState('');
   const [keypressed, keypress] = useState('');
   const [keyedup, keyup] = useState('');
+  const [isInitialized, setInitialized] = useState(false);
+  const [idToDelete, setIdToDelete] = useState('');
+  const [idToUpdate, setIdToUpdate] = useState('');
+  const [hasDisappeared, setDisappeared] = useState(false);
+  const [authState, setAuthState] = useState<AuthState>('LoggedIn');
+
+  const initializeUserTestData = async (): Promise<void> => {
+    await DataStore.save(new User({ firstName: 'DeleteMe', lastName: 'Me' }));
+    await DataStore.save(new User({ firstName: 'UpdateMe', lastName: 'Me' }));
+  };
+
+  const initializeAuthListener = () => {
+    Hub.listen('ui-actions', (message: any) => {
+      const { event, data } = message && message.payload;
+      if (event === 'AuthSignOut_Finished') {
+        const {
+          options: { global },
+        } = data;
+        if (global === true) {
+          setAuthState('LoggedOutGlobally');
+        } else if (global !== undefined && global !== null && global === false) {
+          setAuthState('LoggedOutLocally');
+        } else {
+          setAuthState('Error');
+        }
+      }
+    });
+  };
+
+  useEffect(() => {
+    const initializeTestUserData = async () => {
+      // DataStore.clear() doesn't appear to reliably work in this scenario.
+      indexedDB.deleteDatabase('amplify-datastore');
+      await initializeUserTestData();
+      const queriedIdToDelete = (await DataStore.query(User, (criteria) => criteria.firstName('eq', 'DeleteMe')))[0].id;
+      setIdToDelete(queriedIdToDelete);
+      const queriedIdToUpdate = (await DataStore.query(User, (criteria) => criteria.firstName('eq', 'UpdateMe')))[0].id;
+      setIdToUpdate(queriedIdToUpdate);
+      initializeAuthListener();
+      setInitialized(true);
+    };
+
+    initializeTestUserData();
+  }, []);
+
+  if (!isInitialized) {
+    return null;
+  }
 
   return (
     <AmplifyProvider>
-      <Heading>Event</Heading>
       <View id="event">
+        <Heading>Events</Heading>
         <Event
           click={() => {
             click('✅');
@@ -108,6 +169,41 @@ export default function ComplexTests() {
         />
       </View>
       <Divider />
+      <View id="navigation">
+        <Heading>Navigation Actions</Heading>
+        <NavigationActions />
+        {!hasDisappeared && (
+          <Button
+            id="i-disappear"
+            onClick={() => {
+              setDisappeared(true);
+            }}
+          >
+            I Disappear
+          </Button>
+        )}
+      </View>
+      <Divider />
+      <View id="auth">
+        <Heading>Auth Actions</Heading>
+        <AuthSignOutActions />
+        <span id="auth-state">{authState}</span>
+      </View>
+      <Divider />
+      <View id="datastore">
+        <Heading>DataStore Actions</Heading>
+        <DataStoreActions idToUpdate={idToUpdate} idToDelete={idToDelete} />
+        <SimpleUserCollection id="user-collection" />
+      </View>
+      <Divider />
+      <View id="state">
+        <Heading>State Actions</Heading>
+        <FormWithState />
+      </View>
+      <View id="mutation">
+        <Heading>Mutation Actions</Heading>
+        <InternalMutation />
+      </View>
     </AmplifyProvider>
   );
 }

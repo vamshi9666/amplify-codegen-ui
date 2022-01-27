@@ -13,9 +13,20 @@
   See the License for the specific language governing permissions and
   limitations under the License.
  */
-export { default as Event } from './event.json';
-export { default as AuthSignOutActions } from './authSignOutActions.json';
-export { default as NavigationActions } from './navigationActions.json';
-export { default as DataStoreActions } from './dataStoreActions.json';
-export { default as FormWithState } from './formWithState.json';
-export { default as InternalMutation } from './internalMutation.json';
+/* eslint-disable no-undef */
+
+import { useState } from 'react';
+
+const mockedAction = () => () => {};
+
+export const useDataStoreCreateAction = mockedAction;
+export const useDataStoreUpdateAction = mockedAction;
+export const useDataStoreDeleteAction = mockedAction;
+
+// ///////////////////////
+// Stubbed Actions are based
+// on the WIP implementations
+// in UI.
+// ///////////////////////
+
+export const useStateMutationAction = useState;

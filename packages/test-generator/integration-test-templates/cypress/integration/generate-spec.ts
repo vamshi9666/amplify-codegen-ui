@@ -131,6 +131,12 @@ const EXPECTED_SUCCESSFUL_CASES = new Set([
   'GoldenComponentWithVariants',
   'GoldenTheme',
   'Event',
+  'SimpleUserCollection',
+  'AuthSignOutActions',
+  'NavigationActions',
+  'DataStoreActions',
+  'FormWithState',
+  'InternalMutation',
 ]);
 const EXPECTED_INVALID_INPUT_CASES = new Set([
   'ComponentMissingProperties',
