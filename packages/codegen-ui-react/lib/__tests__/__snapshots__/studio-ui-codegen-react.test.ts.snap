@@ -1918,7 +1918,7 @@ import {
   Divider,
   Flex,
   FlexProps,
-  IconCheck,
+  Icon,
   Text,
 } from \\"@aws-amplify/ui-react\\";
 
@@ -2036,7 +2036,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 138mkm\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2046,8 +2046,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconunz\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2081,7 +2082,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 139jki\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2091,8 +2092,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconrca\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2126,7 +2128,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 137zde\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2136,8 +2138,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconwrc\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2240,7 +2243,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 138upy\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2250,8 +2253,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconxzy\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2285,7 +2289,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 139tvb\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2295,8 +2299,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconpjz\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2330,7 +2335,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 137fsd\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2340,8 +2345,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconhpq\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2444,7 +2450,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 138lgm\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2454,8 +2460,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconoyx\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2489,7 +2496,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 139vsq\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2499,8 +2506,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconcsj\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2534,7 +2542,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 137kjg\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2544,8 +2552,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Icongvd\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2648,7 +2657,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 138udv\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2658,8 +2667,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconkmb\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2693,7 +2703,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 139cwp\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2703,8 +2713,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconzyv\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2738,7 +2749,7 @@ export default function ComplexTest10(
             padding=\\"0px 0px 0px 0px\\"
             {...getOverrideProps(overrides, \\"Frame 137pog\\")}
           >
-            <IconCheck
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               shrink=\\"0\\"
@@ -2748,8 +2759,9 @@ export default function ComplexTest10(
               color=\\"rgba(63.999996185302734,169.83334600925446,191.00000381469727,1)\\"
               type=\\"check\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconsrt\\")}
-            ></IconCheck>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -2794,8 +2806,7 @@ import {
   Divider,
   Flex,
   FlexProps,
-  IconDelete,
-  IconShoppingBag,
+  Icon,
   Image,
   SelectField,
   Text,
@@ -3208,7 +3219,7 @@ export default function ComplexTest11(
               children=\\"Large\\"
               {...getOverrideProps(overrides, \\"Largeqzy\\")}
             ></Text>
-            <IconDelete
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               overflow=\\"hidden\\"
@@ -3219,8 +3230,9 @@ export default function ComplexTest11(
               color=\\"rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)\\"
               type=\\"delete\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconvrz\\")}
-            ></IconDelete>
+            ></Icon>
             <SelectField
               width=\\"64px\\"
               position=\\"absolute\\"
@@ -3350,7 +3362,7 @@ export default function ComplexTest11(
               children=\\"Large\\"
               {...getOverrideProps(overrides, \\"Largedkg\\")}
             ></Text>
-            <IconDelete
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               overflow=\\"hidden\\"
@@ -3361,8 +3373,9 @@ export default function ComplexTest11(
               color=\\"rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)\\"
               type=\\"delete\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconzad\\")}
-            ></IconDelete>
+            ></Icon>
             <SelectField
               width=\\"64px\\"
               position=\\"absolute\\"
@@ -3610,7 +3623,7 @@ export default function ComplexTest11(
             top=\\"105px\\"
             {...getOverrideProps(overrides, \\"Group 313\\")}
           >
-            <IconShoppingBag
+            <Icon
               width=\\"24px\\"
               height=\\"24px\\"
               overflow=\\"hidden\\"
@@ -3620,8 +3633,9 @@ export default function ComplexTest11(
               padding=\\"0px 0px 0px 0px\\"
               type=\\"shopping_bag\\"
               fontSize=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconhpw\\")}
-            ></IconShoppingBag>
+            ></Icon>
             <Text
               fontFamily=\\"Inter\\"
               fontSize=\\"16px\\"
@@ -4863,16 +4877,7 @@ import {
   EscapeHatchProps,
   getOverrideProps,
 } from \\"@aws-amplify/ui-react/internal\\";
-import {
-  Flex,
-  FlexProps,
-  IconArrowForward,
-  IconBookmarkBorder,
-  IconMoreVert,
-  IconShare,
-  Image,
-  Text,
-} from \\"@aws-amplify/ui-react\\";
+import { Flex, FlexProps, Icon, Image, Text } from \\"@aws-amplify/ui-react\\";
 
 export type SocialAProps = React.PropsWithChildren<
   Partial<FlexProps> & {
@@ -5001,7 +5006,7 @@ export default function SocialA(props: SocialAProps): React.ReactElement {
             direction=\\"row\\"
             {...getOverrideProps(overrides, \\"Article\\")}
           >
-            <IconArrowForward
+            <Icon
               padding=\\"0px 0px 0px 0px\\"
               overflow=\\"hidden\\"
               color=\\"rgba(207.00000286102295,77.00001060962677,193.99995803833008,1)\\"
@@ -5011,8 +5016,9 @@ export default function SocialA(props: SocialAProps): React.ReactElement {
               position=\\"relative\\"
               type=\\"arrow_forward\\"
               height=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconynp\\")}
-            ></IconArrowForward>
+            ></Icon>
             <Text
               padding=\\"0px 0px 0px 0px\\"
               grow=\\"1\\"
@@ -5062,7 +5068,7 @@ export default function SocialA(props: SocialAProps): React.ReactElement {
               children=\\"Share\\"
               {...getOverrideProps(overrides, \\"Sharedgc\\")}
             ></Text>
-            <IconBookmarkBorder
+            <Icon
               padding=\\"0px 0px 0px 0px\\"
               overflow=\\"hidden\\"
               color=\\"rgba(0,0,0,1)\\"
@@ -5072,9 +5078,10 @@ export default function SocialA(props: SocialAProps): React.ReactElement {
               position=\\"relative\\"
               type=\\"bookmark_border\\"
               height=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconsrv\\")}
-            ></IconBookmarkBorder>
-            <IconShare
+            ></Icon>
+            <Icon
               padding=\\"0px 0px 0px 0px\\"
               overflow=\\"hidden\\"
               color=\\"rgba(0,0,0,1)\\"
@@ -5084,9 +5091,10 @@ export default function SocialA(props: SocialAProps): React.ReactElement {
               position=\\"relative\\"
               type=\\"share\\"
               height=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconwdz\\")}
-            ></IconShare>
-            <IconMoreVert
+            ></Icon>
+            <Icon
               padding=\\"0px 0px 0px 0px\\"
               overflow=\\"hidden\\"
               color=\\"rgba(0,0,0,1)\\"
@@ -5096,8 +5104,9 @@ export default function SocialA(props: SocialAProps): React.ReactElement {
               position=\\"relative\\"
               type=\\"more_vert\\"
               height=\\"24px\\"
+              pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
               {...getOverrideProps(overrides, \\"Iconxpr\\")}
-            ></IconMoreVert>
+            ></Icon>
           </Flex>
         </Flex>
         <Image
@@ -5120,7 +5129,7 @@ export default function SocialA(props: SocialAProps): React.ReactElement {
         direction=\\"row\\"
         {...getOverrideProps(overrides, \\"Read moreudv\\")}
       >
-        <IconArrowForward
+        <Icon
           padding=\\"0px 0px 0px 0px\\"
           overflow=\\"hidden\\"
           color=\\"rgba(0,0,0,1)\\"
@@ -5130,8 +5139,9 @@ export default function SocialA(props: SocialAProps): React.ReactElement {
           position=\\"relative\\"
           type=\\"arrow_forward\\"
           height=\\"24px\\"
+          pathData=\\"M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z\\"
           {...getOverrideProps(overrides, \\"Iconlxm\\")}
-        ></IconArrowForward>
+        ></Icon>
         <Text
           padding=\\"0px 0px 0px 0px\\"
           grow=\\"1\\"
@@ -5259,38 +5269,6 @@ export default function ColorChangeOnClick(
   "declaration": undefined,
   "renderComponentToFilesystem": [Function],
 }
-`;
-
-exports[`amplify render tests primitives Built-in Iconset 1`] = `
-"/* eslint-disable */
-import React from \\"react\\";
-import {
-  EscapeHatchProps,
-  getOverrideProps,
-} from \\"@aws-amplify/ui-react/internal\\";
-import {
-  IconBrightness_1,
-  IconCloud,
-  View,
-  ViewProps,
-} from \\"@aws-amplify/ui-react\\";
-
-export type MyIconsProps = React.PropsWithChildren<
-  Partial<ViewProps> & {
-    overrides?: EscapeHatchProps | undefined | null;
-  }
->;
-export default function MyIcons(props: MyIconsProps): React.ReactElement {
-  const { overrides, ...rest } = props;
-  return (
-    /* @ts-ignore: TS2322 */
-    <View {...rest} {...getOverrideProps(overrides, \\"MyIcons\\")}>
-      <IconCloud></IconCloud>
-      <IconBrightness_1></IconBrightness_1>
-    </View>
-  );
-}
-"
 `;
 
 exports[`amplify render tests primitives CheckboxField 1`] = `

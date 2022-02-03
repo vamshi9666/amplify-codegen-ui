@@ -33,7 +33,7 @@ import {
   buildOpeningElementEvents,
   filterStateReferencesForComponent,
 } from './workflow';
-import Primitive, { PrimitiveChildrenPropMapping } from './primitive';
+import { Primitive, PrimitiveChildrenPropMapping } from './primitive';
 
 export class ReactComponentWithChildrenRenderer<TPropIn> extends ComponentWithChildrenRendererBase<
   TPropIn,

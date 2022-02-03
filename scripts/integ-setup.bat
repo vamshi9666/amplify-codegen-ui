@@ -26,6 +26,7 @@ call lerna add --no-ci --scope integration-test os-browserify
 call lerna add --no-ci --scope integration-test path-browserify
 call lerna add --no-ci --scope integration-test @types/node
 call lerna add --no-ci --scope integration-test react-app-rewired
+call lerna add --scope integration-test @babel/core@7.16.12
 
 chdir packages\integration-test
 call jq ".scripts.start = \"react-app-rewired start\" | .scripts.build = \"react-app-rewired build\" | .scripts.test = \"react-app-rewired test\"" package.json > tmp.json

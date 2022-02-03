@@ -19,7 +19,6 @@ import ComponentTests from './ComponentTests';
 import GenerateTests from './GenerateTests';
 import PrimitivesTests from './PrimitivesTests';
 import ComplexTests from './ComplexTests';
-import IconsetTests from './IconsetTests';
 import SnippetTests from './SnippetTests'; // eslint-disable-line import/extensions
 import WorkflowTests from './WorkflowTests';
 
@@ -46,9 +45,6 @@ const HomePage = () => {
           <a href="/complex-tests">Complex Tests</a>
         </li>
         <li>
-          <a href="/iconset-tests">Iconset Tests</a>
-        </li>
-        <li>
           <a href="/snippet-tests">Snippet Tests</a>
         </li>
         <li>
@@ -67,7 +63,6 @@ export default function App() {
         <Route path="/generate-tests" element={<GenerateTests />} />
         <Route path="/primitives-tests" element={<PrimitivesTests />} />
         <Route path="/complex-tests" element={<ComplexTests />} />
-        <Route path="/iconset-tests" element={<IconsetTests />} />
         <Route path="/snippet-tests" element={<SnippetTests />} />
         <Route path="/workflow-tests" element={<WorkflowTests />} />
         <Route path="*" element={<HomePage />} />

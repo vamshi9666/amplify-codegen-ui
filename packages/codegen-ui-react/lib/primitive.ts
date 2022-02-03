@@ -14,9 +14,8 @@
   limitations under the License.
  */
 import { factory, SyntaxKind, TypeParameterDeclaration, TypeNode } from 'typescript';
-import iconset from './iconset';
 
-enum Primitive {
+export enum Primitive {
   Alert = 'Alert',
   Badge = 'Badge',
   Button = 'Button',
@@ -66,8 +65,6 @@ enum Primitive {
   VisuallyHidden = 'VisuallyHidden',
 }
 
-export default Primitive;
-
 export function isPrimitive(componentType: string): boolean {
   return Object.values(Primitive).includes(componentType as Primitive);
 }
@@ -104,7 +101,3 @@ export const PrimitiveTypeParameter: Partial<
     reference: () => [factory.createKeywordTypeNode(SyntaxKind.AnyKeyword)],
   },
 };
-
-export function isBuiltInIcon(componentType: string): boolean {
-  return iconset.has(componentType);
-}
